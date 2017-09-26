@@ -1,0 +1,9 @@
+if [ $# -ne 1 ]; then
+	exit
+fi
+
+if [ ! $REPO ]; then
+	REPO=https://github.com/mobangjack
+fi
+
+git clone $REPO/$1
