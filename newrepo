@@ -10,9 +10,6 @@ fi
 script="curl -u 'mobangjack' https://api.github.com/user/repos -d '{\"name\":\"$name\"}' &&
     git init && 
     git remote add origin $REPO/$name && 
-    git add -A && 
-    git commit -m \"1st commit\" && 
-    git push origin master"
 
 echo "executing script: $script"
 
